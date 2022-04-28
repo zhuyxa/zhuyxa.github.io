@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Hugo&#43;githublalala | Charaka</title>
+
+<link rel="stylesheet" href="https://zhuyxa.github.io/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://zhuyxa.github.io/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://zhuyxa.github.io/js/jssocials.js"></script>
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://zhuyxa.github.io"><h1 class="title is-3">Charaka</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://zhuyxa.github.io/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/natarajmb/" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.linkedin.com/in/natarajmb/" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/natarajmb/" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">April 27, 2022</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Hugo&#43;githublalala</h1>
+  <div class="content">
+    <h1 id="基于hugo的网页创建并传到github网页上tips">基于hugo的网页创建并传到github网页上tips</h1>
+<ul>
+<li>
+<ol>
+<li>在hugo上创建网页然后，更改baseurl = &ldquo;<a href="https://JinzeCao.github.io/%22">https://JinzeCao.github.io/&quot;</a>；</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>在github上创建一个repository库并且，修正库为master和theme；</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>还有就是最后需要改为</li>
+</ol>
+</li>
+</ul>
+<pre tabindex="0"><code>$ cd public
+$ git init
+$ git remote add origin https://github.com/angtnt/angtnt.github.io.git
+$ git add -A
+$ git commit -m &#34;first commit&#34;
+$ git push -f origin master
+</code></pre><ul>
+<li>以后每一次都改成的是先在mypage输入hugo，然后再在public当中生成以上命令即可。</li>
+</ul>
+<p>参照网站</p>
+<pre tabindex="0"><code>https://www.daniao.org/5349.html
+https://www.bilibili.com/video/BV1m4411c7ia?spm_id_from=333.999.0.0
+</code></pre>
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+        });
+    </script>
+    
+</div>
+
+<div class="container has-text-centered">
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/natarajmb">Nataraj Basappa</a> 2018</p>
+  </div>
+</section>
+
+
